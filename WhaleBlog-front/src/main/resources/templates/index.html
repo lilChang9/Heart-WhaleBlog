@@ -37,6 +37,17 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="index.html">首页</a></li>
                         <li><a href="detail.html">博客</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    分类
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" th:each="">
+                                    <li ><a href="#">Action</a></li>
+                                </ul>
+                            </div>
+                        </li>
                         <li><a href="404.html">教程</a></li>
                         <li><a href="404.html">关于</a></li>
                         <li><a href="404.html">登录</a></li>
