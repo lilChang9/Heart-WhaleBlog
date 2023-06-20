@@ -1,7 +1,7 @@
 package com.heart.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.heart.entity.Category;
+import com.heart.domain.entity.Category;
 import org.apache.ibatis.annotations.Mapper;
 
 

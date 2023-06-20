@@ -1,7 +1,7 @@
 package com.heart.controller;
 
 import com.heart.domain.ResponseResult;
-import com.heart.service.CategoryService;
+import com.heart.service.LinkService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,19 +9,18 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.annotation.Resource;
 
 @RestController
-@RequestMapping("/category")
-public class CategoryController {
+@RequestMapping("/link")
+public class LinkController {
 
     @Resource
-    private CategoryService categoryService;
+    private LinkService linkService;
 
     /**
-     * 获取所有的分类
-     * @return 分类列表(id,name)
+     * 获取所有友链
+     * @return
      */
-    @GetMapping("/getCategoryList")
-    public ResponseResult categoryList(){
-        return categoryService.categoryList();
+    @GetMapping("/getAllLink")
+    public ResponseResult getAllLink(){
+        return linkService.getAllLink();
     }
-
 }

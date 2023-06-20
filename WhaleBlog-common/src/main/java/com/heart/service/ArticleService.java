@@ -9,4 +9,9 @@ import java.util.List;
 
 public interface ArticleService extends IService<Article> {
     ResponseResult<List<HotArticleVo>> hotArticleList();
+
+
+    ResponseResult articleList(Long categoryId, Integer pageNum, Integer pageSize);
+
+    ResponseResult articleDetail(Long id);
 }

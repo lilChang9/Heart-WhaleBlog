@@ -8,7 +8,7 @@ import com.heart.constants.category.CategoryConstants;
 import com.heart.domain.ResponseResult;
 import com.heart.domain.entity.Article;
 import com.heart.domain.vo.CategoryVo;
-import com.heart.entity.Category;
+import com.heart.domain.entity.Category;
 import com.heart.mapper.CategoryMapper;
 import com.heart.service.ArticleService;
 import com.heart.service.CategoryService;
@@ -17,7 +17,6 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.List;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 
 /**

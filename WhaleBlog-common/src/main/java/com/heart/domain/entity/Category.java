@@ -1,4 +1,4 @@
-package com.heart.entity;
+package com.heart.domain.entity;
 
 import java.util.Date;
 

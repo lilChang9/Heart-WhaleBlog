@@ -2,7 +2,7 @@ package com.heart.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.heart.domain.ResponseResult;
-import com.heart.entity.Category;
+import com.heart.domain.entity.Category;
 
 
 /**
