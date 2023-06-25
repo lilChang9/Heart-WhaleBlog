@@ -24,3 +24,9 @@ mybatis-plus:
       logic-delete-value: 1
       logic-not-delete-value: 0
       id-type: auto
+
+oss:
+  accessKey: 0mYNTblkB_h5CTWkJbEORjwqrYTFLIcXQHQCzMY2
+  secretKey: M3fc1HTrqJPLuKbL8zapqiSMuUdpR7hirEAu4ySh
+  bucket: whale-blog
+  externalLink: rwp6doyvs.hn-bkt.clouddn.com/
