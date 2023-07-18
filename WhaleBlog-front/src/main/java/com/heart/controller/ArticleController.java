@@ -3,6 +3,8 @@ package com.heart.controller;
 import com.heart.domain.ResponseResult;
 import com.heart.domain.vo.HotArticleVo;
 import com.heart.service.ArticleService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -10,6 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/article")
+@Api(tags = "文章",description = "文章接口")
 public class ArticleController {
 
     @Resource
@@ -20,6 +23,7 @@ public class ArticleController {
      * @return 热门文章列表集合
      */
     @GetMapping("/hotArticleList")
+    @ApiOperation(value = "热门文章",notes = "获取热门文章集合")
     public ResponseResult<List<HotArticleVo>> getHotArticle(){
         return articleService.hotArticleList();
     }
@@ -49,4 +53,9 @@ public class ArticleController {
         return articleService.articleDetail(id);
     }
 
+
+    @PutMapping("/updateViewCount/{id}")
+    public ResponseResult updateViewCount(@PathVariable("id") Long id){
+        return articleService.updateViewCount(id);
+    }
 }

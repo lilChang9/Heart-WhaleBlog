@@ -18,5 +18,10 @@ public class ArticleConstants {
     public static final int HOT_ARTICLE_NUM = 5;
 
 
+    /**
+     * Redis 中浏览量访问前缀
+     */
+    public static final String REDIS_VIEWCOUNT_PREFIX = "Article::ViewCount::";
+
 
 }

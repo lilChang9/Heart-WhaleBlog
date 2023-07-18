@@ -15,6 +15,7 @@ public class LinkController {
     @Resource
     private LinkService linkService;
 
+
     /**
      * 获取所有友链
      * @return
@@ -23,4 +24,7 @@ public class LinkController {
     public ResponseResult getAllLink(){
         return linkService.getAllLink();
     }
+
+
+
 }
